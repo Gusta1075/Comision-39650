@@ -7,6 +7,7 @@ const CounterContainer = () => {
   const sumar = () => {
     setCounter(counter + 1);
     
+    
   };
   const restar = () => {
     setCounter(counter - 1);
