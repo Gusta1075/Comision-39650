@@ -1,0 +1,22 @@
+.containerNavbar {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(162, 215, 205);
+  }
+  ul {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
+  img {
+    align-items: center;
+  }
+  li {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+      color: blue;
+      
+  }
+  
