@@ -1,11 +1,23 @@
-const ItemList = ({ saludo, edad }) => {
-    return (
-      <div>
-        <h1>Bienvenido a mi Página de E-commerce!!!</h1>
-        <h2>{saludo}</h2>
-      </div>
-    );
-  };
-  
-  export default ItemList;
-  
+import ItemCard from "./ItemCard";
+
+const ItemList = ({ items }) => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        border: "2px solid blue",
+        justifyContent: "space-evenly",
+        padding: "40px",
+        
+      }}
+    >
+      {items.map((item) => {
+        return (
+          <ItemCard item={item} key={item.id}/>
+        );
+      })}
+    </div>
+  );
+};
+
+export default ItemList;
